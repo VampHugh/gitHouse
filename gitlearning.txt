@@ -19,3 +19,6 @@ $ cd learngit	创建一个新的文件夹并进入
 15.$ cat readme.txt		打印文件
 16.git checkout -- file	可以丢弃工作区的修改
 17.git reset HEAD file	可以把暂存区的修改撤销掉（unstage），重新放回工作区
+18.$ rm test.txt	删掉文件
+19.$ git rm test.txt	从版本库中删除该文件然后$ git commit -m "remove test.txt"
+20.$ git checkout -- test.txt	另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本
