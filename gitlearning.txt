@@ -22,3 +22,4 @@ $ cd learngit	创建一个新的文件夹并进入
 18.$ rm test.txt	删掉文件
 19.$ git rm test.txt	从版本库中删除该文件然后$ git commit -m "remove test.txt"
 20.$ git checkout -- test.txt	另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本
+21.$ ssh-keygen -t rsa -C "youremail@example.com"	创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key
