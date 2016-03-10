@@ -1,0 +1,8 @@
+命令行
+1.sudo apt-get install git	在linux上可以直接安装
+2.$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"	在windows上安装配置
+3.$ mkdir learngit
+$ cd learngit	创建一个新的文件夹并进入
+4.pwd	显示当前路径
+5.git init	把这个目录变成Git可以管理的仓库
