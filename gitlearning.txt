@@ -6,3 +6,16 @@ $ git config --global user.email "email@example.com"	在windows上安装配置
 $ cd learngit	创建一个新的文件夹并进入
 4.pwd	显示当前路径
 5.git init	把这个目录变成Git可以管理的仓库
+6.ls -ah	显示.git的目录
+7.$ git add readme.txt	把文件添加到仓库
+8.$ git commit -m "wrote a readme file"	把文件提交到仓库-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。
+9.git status	命令可以让我们时刻掌握仓库当前的状态
+10.git diff		顾名思义就是查看difference，显示的格式正是Unix通用的diff格式
+11.git log		命令显示从最近到最远的提交日志
+12.$ git reset --hard HEAD^		首先，Git必须知道当前版本是哪个版本，在Git中，用HEAD表示当前版本，也就是最新的提交3628164...882e1e0（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。我们要把当前版本回退到上一个版本，就可以使用git reset命令
+13.$ git reset --hard 3628164		好比你从21世纪坐时光穿梭机来到了19世纪，想再回去已经回不去了，肿么办？
+办法其实还是有的，只要上面的命令行窗口还没有被关掉，你就可以顺着往上找啊找啊，找到那个append GPL的commit id是3628164...，于是就可以指定回到未来的某个版本
+14.git reflog	Git提供了一个命令git reflog用来记录你的每一次命令
+15.$ cat readme.txt		打印文件
+16.git checkout -- file	可以丢弃工作区的修改
+17.git reset HEAD file	可以把暂存区的修改撤销掉（unstage），重新放回工作区
